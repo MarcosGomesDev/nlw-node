@@ -2,7 +2,16 @@ POST http://localhost:3333/events
 Content-Type: application/json
 
 {
-  "title": "Unite Summit",
-  "details": "A conference for Unity developers",
-  "maximumAttendees": 100
+  "title": "Novo Evento 2",
+  "details": null,
+  "maximumAttendees": 1
+}
+###
+
+POST http://localhost:3333/events/2e2d8aee-c5cf-4981-8e56-f15e702b3db8/attendees
+Content-Type: application/json
+
+{
+  "name": "Marcos Gomes",
+  "email": "marcosgomesdev@gmail.com"
 }
