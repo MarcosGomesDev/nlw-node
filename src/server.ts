@@ -3,6 +3,7 @@ import {
   serializerCompiler,
   validatorCompiler,
 } from "fastify-type-provider-zod";
+import { checkIn } from "./routes/check-in";
 import { createEvent } from "./routes/create-event";
 import { getAttendeeBadge } from "./routes/get-attendee-badge";
 import { getEvent } from "./routes/get-event";
@@ -17,6 +18,7 @@ app.register(createEvent);
 app.register(registerForEvent);
 app.register(getEvent);
 app.register(getAttendeeBadge);
+app.register(checkIn);
 
 app.listen({ port: 3333 }).then(() => {
   console.log("http server runing");
