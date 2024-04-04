@@ -17,7 +17,7 @@ model Event {
   slug             String  @unique
   maximumAttendees Int?    @map("maximum_attendees")
 
-  Attendee Attendee[]
+  attendees Attendee[]
 
   @@map("events")
 }
