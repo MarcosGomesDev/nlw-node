@@ -8,10 +8,14 @@ Content-Type: application/json
 }
 ###
 
-POST http://localhost:3333/events/2e2d8aee-c5cf-4981-8e56-f15e702b3db8/attendees
+POST http://localhost:3333/events/aaa2475b-5d92-4b03-ab24-85b80f3458a7/attendees
 Content-Type: application/json
 
 {
   "name": "Marcos Gomes",
   "email": "marcosgomesdev@gmail.com"
 }
+
+###
+
+GET http://localhost:3333/events/aaa2475b-5d92-4b03-ab24-85b80f3458a7
